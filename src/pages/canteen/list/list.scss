@@ -1,0 +1,53 @@
+img.fapic {
+    width: 100px;
+    border-radius: 100%;
+}
+.Head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 37px;
+    cursor: pointer;
+}
+.title {
+    margin-left: 47px;
+    width: 24%;
+}
+.displayButton {
+    display: flex;
+    width: 51%;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+.dishes {
+    height: 100%;
+    overflow: auto;
+    flex: 1 1;
+}
+
+.sonlist {
+    width: 49%;
+    margin: 20px;
+}
+
+
+
+.son {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // height: 0px;
+    background-color: whitesmoke;
+}
+
+.mybody {
+    overflow: auto;
+    height: 100%;
+}
+
+.button1{
+    border-radius: 45px;
+    border-style: solid;
+}
+

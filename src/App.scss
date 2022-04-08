@@ -1,0 +1,83 @@
+.App {
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0 0 4px #DDD;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 375px;
+  position: relative;
+
+  @media (max-width: 400px) {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.App-body {
+  --vw: calc(375px * 2);
+  --vh: calc(724px * 2);
+  width: var(--vw);
+  height: var(--vh);
+  zoom: .5;
+  font-size: 30px;
+  position: relative;
+  @media (max-width: 400px) {
+    --vw: calc(100vw * 2);
+    --vh: calc((100vh - 50px) * 2);
+  }
+}
+
+.App-header {
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.App-back,
+.App-pill-button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 0;
+}
+
+.App-pill {
+  display: flex;
+  align-items: center;
+  border: 1px solid #DDD;
+  height: 30px;
+  width: 80px;
+  border-radius: 30px;
+  background-color: #FFF6;
+  overflow: hidden;
+}
+
+.App-pill-button {
+  flex-grow: 1;
+  > .fas {
+    font-size: 18px;
+  }
+}
+
+.App-back {
+  width: 30px;
+  height: 30px;
+  margin-right: 50px;
+  font-size: 30px;
+  &:disabled {
+    visibility: hidden;
+    cursor: auto;
+  }
+}
+
+.App-pill-split {
+  height: 20px;
+  width: 1px;
+  background-color: #DDD;
+}

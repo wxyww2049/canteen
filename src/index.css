@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor:url(https://cdn.jsdelivr.net/gh/wxyww2049/cdn@now/img/cn1.png), auto;
+}
+
+/* a:hover { cursor:url("https://cdn.jsdelivr.net/gh/wxyww2049/cdn@now/img/cn2.png"),auto;} */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

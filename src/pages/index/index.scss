@@ -1,0 +1,294 @@
+$color-brand: #00b696;
+$color-brand-light: #3acfb4;
+$color-brand-dark: #109880;
+
+.content {
+  margin-bottom: calc(constant(safe-area-inset-bottom) + 140px);
+  margin-bottom: calc(env(safe-area-inset-bottom) + 140px);
+}
+.at-tab-bar {
+  padding: 12px 0;
+  padding-bottom: calc(constant(safe-area-inset-bottom) + 12px);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 12px);
+}
+.news-list-cntr {
+  .at-tabs__header {
+    position: fixed;
+    z-index: 2;
+  }
+  .at-tabs__body {
+    margin-top: 90px;
+  }
+}
+// 主页
+.swiper {
+  width: var(--vw);
+  height: calc(var(--vw) * .4);
+
+  .swiper-item {
+    background-color: #dfdfdf;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.panel {
+  margin-bottom: 16px;
+  .panel-title {
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 52px;
+    padding-top: 8px;
+    color: #6a6a77;
+    font-size: 32px;
+    font-weight: 700;
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 32px;
+      top: 50%;
+      margin-top: -16px;
+      width: 10px;
+      height: 48px;
+      background-color: $color-brand;
+      box-shadow: 0 4px 8px 0 rgba(97, 144, 232, 0.2);
+      border-radius: 2px;
+    }
+  }
+
+  .panel-view {
+    padding: 4px 32px;
+  }
+}
+
+.course-tabs-cntr {
+  .course-tabs {
+    display: flex;
+    .tabs {
+      font-size: 32px;
+      margin: 0 16px;
+      color: #0000002f;
+    }
+
+    .tab-current {
+      color: $color-brand;
+    }
+  }
+}
+
+// 课表
+$mark-color: #6e2c00;
+$mark-background: #f7f9f9;
+$mark-border: #ecf0f1;
+.course-cntr {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .tool-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70px;
+    font-size: 32px;
+    .menu {
+      position: absolute;
+      right: 16px;
+    }
+    .picker {
+      background-color: #EEE;
+      border-radius: 12px;
+      padding: 4px 12px;
+    }
+  }
+
+  .week {
+    padding-left: 48px;
+    background-color: $mark-background;
+    .day {
+      font-size: 28px;
+      text-align: center;
+      color: $mark-color;
+      padding: 8px 0;
+      margin: 0 16px;
+    }
+    .today {
+      border-bottom: 6px solid $color-brand;
+    }
+  }
+
+  .day-course-part {
+    flex: 1;
+    .sections {
+      width: 48px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 28px;
+      background-color: $mark-background;
+      &:first-child {
+        border-top: 1px solid $mark-border;
+      }
+      .section {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid $mark-border;
+        color: $mark-color;
+      }
+    }
+    .course-schedule {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .course-login-tip {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        > .text {
+          color: #555;
+          font-size: 30px;
+          max-width: 80%;
+        }
+      }
+    }
+    .course-row {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+    .course {
+      color: white;
+      padding: 2px;
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        padding: 4px;
+      }
+      height: calc(100% - 4px);
+      margin: 2px;
+      border-radius: 8px;
+      &:not(.empty) {
+        border: 1px solid #0001;
+      }
+    }
+    .course-name {
+      font-size: 24px;
+      overflow: hidden;
+      text-align: center;
+      word-break: break-all;
+      width: 100%;
+      height: 100%;
+      .bold {
+        font-weight: bold;
+        text-shadow: 0 0 4px #0005;
+      }
+    }
+  }
+
+  // .delete-course {
+  //   font-size: 28px;
+  //   color: #b03a2e;
+  // }
+
+  .delete-course-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    .at-button {
+      margin: 0 10px;
+      width: 180px;
+      font-size: 30px;
+      border-color: #8884;
+      height: 82px;
+      line-height: 80px;
+    }
+    > .at-button {
+      background-color: #f52222;
+      color: white;
+      transition: width .3s ease-out;
+      .at-loading__ring {
+        border-color: #FFF transparent transparent transparent;
+      }
+      &.expand {
+        width: 220px;
+      }
+    }
+  }
+  .delete-course-cancel-wrap {
+    width: 0;
+    overflow: hidden;
+    transition: width .3s ease-out;
+    > .at-button {
+      background-color: #f5f5f5;
+      color: #757575;
+    }
+    &.show {
+      width: 200px;
+    }
+  }
+}
+
+// 用户界面
+.user-cntr {
+  background-color: #f8f8f8;
+  padding: 32px;
+  min-height: 100%;
+  box-sizing: border-box;
+  .avatar-cntr {
+    padding: 0 32px;
+    .info-cntr {
+      margin-left: 32px;
+      .nickname {
+        font-size: 36px;
+      }
+      .note {
+        font-size: 28px;
+        word-break: break-all;
+      }
+    }
+    margin-bottom: 32px;
+  }
+
+  .func-list {
+    border-radius: 16px;
+    margin-bottom: 32px;
+    position: static;
+    border: none;
+  }
+  .danger-btn {
+    .at-button--secondary {
+      border: none;
+      color: #e93b3d;
+    }
+  }
+  .qrcode {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.app-cntr {
+  width: var(--vw);
+  height: var(--vh);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.at-modal__content {
+  overflow: hidden;
+}
+.note {
+  color: #888888;
+}

@@ -1,0 +1,81 @@
+
+
+
+.dishes{
+    flex:1;
+}
+.detail {
+    display: flex;
+    /* width: 90px; */
+    flex-direction: row;
+    margin-top: 29px;
+    width: 590px;
+    font-size: 28px;
+}
+.but1{
+    font-size: 25px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: rgb(201, 201, 201);
+    border-width: 0.3px;
+    font-weight: 0.01px;
+    padding: 30px;
+}
+
+.cai{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 629px;
+    height: 125px;
+    font-size: 35px;
+    border: #a8a8af solid 1px;
+    letter-spacing: 3px;
+    padding: 30px;
+    box-shadow: rgb(0 0 0 / 30%) 5px 5px 5px;
+    margin: 17px;
+}
+
+.price {
+    font-size: 28px;
+    /* margin-top: 20px; */
+    display: block;
+    /* margin-left: 50px; */
+    width: 164px;
+    /* padding-left: 20px; */
+}
+
+.pic1 {
+    block-size: 60px;
+     margin-left: -113px; 
+    margin-top: 20px;
+}
+.pic2{
+    block-size: 60px;
+    margin-left: -113px; 
+    margin-top: 20px;
+}
+
+.window {
+    font-size: 28px;
+    /* margin-top: 0px; */
+    /* padding-right: 0px; */
+    width: 108px;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    margin-left: 21px;
+}
+
+.time {
+    font-size: 28px;
+    /* padding-left: 60px; */
+    width: 131px;
+}
+
+.name{
+    font-size: 47px;
+    font-weight: 600;
+    font-family:serif;
+}

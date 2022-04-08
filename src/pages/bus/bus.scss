@@ -1,0 +1,101 @@
+$color-brand: #00b696;
+$color-brand-light: #3acfb4;
+$color-brand-dark: #109880;
+
+.bus-cntr {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  .school-cntr {
+    margin-top: 64px;
+    .school {
+      width: 30%;
+      font-size: 32px;
+      margin-bottom: 32px;
+      text-align: center;
+      color: #888888;
+      .school-icon {
+        width: 140px;
+        height: 140px;
+        border-radius: 10px;
+      }
+      .mark {
+        color: $color-brand;
+      }
+    }
+  }
+  .query-btn {
+    width: 80%;
+    margin: 32px auto;
+  }
+  .h4 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .sender-info {
+    text-align: right;
+    margin-top: 40px;
+  }
+  .at-modal__container {
+    width: calc(100% - 40px);
+    transform: none;  // 优化性能
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+  .at-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.bus-table {
+  margin: 10px 0;
+}
+.bus-table-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1PX solid #CCC;
+  padding: 5px;
+  &.bus-table-head {
+    border-bottom-width: 2PX;
+    font-weight: bold;
+  }
+  &:nth-child(2n + 1) {
+    background-color: #F5F5F5;
+  }
+}
+.bus-table-times {
+  min-width: 110px;
+  padding-left: 20px;
+}
+.bus-table-route {
+  flex-grow: 1;
+  .at-icon {
+    font-size: 28px !important;
+    color: #888 !important;
+  }
+}
+.bus-time-pill {
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 8px;
+  background-color: $color-brand-dark;
+  color: white;
+  font-weight: bold;
+  &:nth-child(2) {
+    margin-top: 5px;
+  }
+}
+.bus-tips {
+  margin-top: 10px;
+  color: #888;
+  font-size: 28px;
+  padding: 10px;
+  .bold {
+    font-weight: bold;
+    color: $color-brand-dark;
+  }
+}

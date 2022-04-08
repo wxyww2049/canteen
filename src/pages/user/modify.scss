@@ -1,0 +1,16 @@
+.user-modify-cntr {
+  background-color: #f8f8f8;
+  padding: 32px;
+  padding-bottom: calc(constant(safe-area-inset-bottom) + 32px);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 32px);
+  min-height: var(--vh);
+  .info-cntr {
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+    padding-bottom: 32px;
+  }
+  .strong {
+    font-weight: 700;
+  }
+}
